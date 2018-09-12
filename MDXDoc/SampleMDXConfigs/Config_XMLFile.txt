@@ -1,0 +1,8 @@
+{
+	"SourceType": "XML",
+	"ProjectName": "Suominen",
+	"CubeName": "ProductionSUO",
+	"ConfigParams": {
+						"Path": "C:\\Users\\kostytom\\Source\\Repos\\RA\\TIPSRA Suominen\\TIPSRA_OLAP\\ProductionSUO.cube"
+					}
+}
