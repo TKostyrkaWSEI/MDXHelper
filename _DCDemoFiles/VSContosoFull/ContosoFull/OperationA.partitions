@@ -1,0 +1,201 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="44702e53-d52f-406c-ab1a-f618d541d828" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Operation</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact ITSLA</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="89c09177-29a7-4749-bde2-5489da7b626c">
+          <ID>Fact ITSLA</ID>
+          <Name>Fact ITSLA</Name>
+          <CreatedTimestamp>2009-12-28T06:12:22Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:49:58Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a7b7711e-1895-4d9f-8bf0-7a742d8e81da">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_FactITSLA</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="bfeb73f9-a572-4e0b-aa76-a81ebffa8702">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="e55f3a67-f6be-416d-bfdb-c8ba5d79dd1a" />
+          </ProactiveCaching>
+          <EstimatedSize>218151</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact IT Machine</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3b18bb0e-8f39-4c88-8cff-18129f2a23e0">
+          <ID>Fact IT Machine</ID>
+          <Name>Fact IT Machine</Name>
+          <CreatedTimestamp>2009-12-28T06:12:23Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:49:59Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="311abd4a-2fb6-45eb-a869-a46c0f60bfcb">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_FactITMachine</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="fc94b4fe-d995-49c0-8a5c-d28e9b19aa79">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5dc8ab78-2545-45f6-92bd-19fdffc977dd" />
+          </ProactiveCaching>
+          <EstimatedSize>684325</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Machine</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c29e1b5e-fd17-4681-a225-a139fbe096bd">
+          <ID>Dim Machine</ID>
+          <Name>Dim Machine</Name>
+          <CreatedTimestamp>2009-12-28T06:12:23Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:49:57Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12365f46-70f1-4537-9b21-f025b6952bb2">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_DimMachine</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d75377cd-5b0c-45e3-b71e-e8d664d10f0c">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="1673d920-7e46-4df0-8fd4-3c4206a47547" />
+          </ProactiveCaching>
+          <EstimatedSize>205431</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Inventory</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5c0738d3-455d-4ed1-a3c6-07cc043accb7">
+          <ID>Fact Inventory</ID>
+          <Name>Fact Inventory</Name>
+          <CreatedTimestamp>2009-12-28T06:12:24Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:53:53Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e256ef30-8803-43c5-aa8b-86eb63aa9d30">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_FactInventory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b9efbee8-d420-43ee-9e43-d96dbbbfd65c">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d2206533-7787-4b2f-8caa-61c3ca3be0fd" />
+          </ProactiveCaching>
+          <EstimatedSize>208645694</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1c47cba9-de79-4636-b7f9-133a2d240eb0">
+          <ID>Fact Sales</ID>
+          <Name>Fact Sales</Name>
+          <CreatedTimestamp>2009-12-28T06:12:24Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:52:02Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="13f4d802-db95-431d-9930-8ef8b7e48f61">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_FactSales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="6ee39a63-3124-4d7c-98b3-0a0cfa0cb3c2">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="cc280efd-2e26-46cb-944c-280f82c1312a" />
+          </ProactiveCaching>
+          <EstimatedSize>135352316</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Quota</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6098fd02-7a9a-44ca-81f1-58c36994a2df">
+          <ID>Fact Sales Quota</ID>
+          <Name>Fact Sales Quota</Name>
+          <CreatedTimestamp>2009-12-28T06:12:25Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:53:20Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="45bd57d2-bb69-4d3d-aa4e-f3a88e55d37b">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_FactSalesQuota</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="403cbd2e-f5f6-45e5-9d7c-26e9cf9a9475">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5907f03a-3ff8-40eb-8dd6-22ca1b91e30e" />
+          </ProactiveCaching>
+          <EstimatedSize>180398176</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Exchange Rate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="507b12d5-662d-4641-b74a-88cc556f4a3c">
+          <ID>Fact Exchange Rate</ID>
+          <Name>Fact Exchange Rate</Name>
+          <CreatedTimestamp>2009-12-28T06:12:26Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-01-21T11:33:38Z</LastSchemaUpdate>
+          <LastProcessed>2010-01-21T19:49:57Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5c3edac3-0e19-4281-9bfe-35aae2991774">
+            <DataSourceViewID>OPBI</DataSourceViewID>
+            <TableID>dbo_FactExchangeRate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="3bbccf47-c19c-474f-9206-a169aed41037">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="1a663eb8-5106-40e0-90eb-48c6c724931d" />
+          </ProactiveCaching>
+          <EstimatedSize>7982</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
