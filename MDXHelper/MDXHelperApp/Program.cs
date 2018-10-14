@@ -22,9 +22,7 @@ namespace MDXHelperApp
 
         static void Ladowanie()
         {
-            //string path_tie = @"C:\Users\kostytom\Source\Repos\MDXHelper\SampleMDXConfigs\Config_Server.txt";
-            string path_tie = @"C:\Users\kostytom\Source\Repos\MDXHelper\SampleMDXConfigs\Config_XMLFile.txt";
-            //string path_tie = @"C:\Users\kostytom\Source\Repos\MDXHelper\SampleMDXConfigs\Config_XMLHttp.txt";
+            string path_tie = @"C:\Users\tomek\Desktop\DCDemoMDX\Config_ServerAWDW1.txt";
 
             string nl = new string('-', 50);
             Console.WriteLine(nl);
