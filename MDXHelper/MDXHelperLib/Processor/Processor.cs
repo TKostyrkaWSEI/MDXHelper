@@ -12,6 +12,7 @@ namespace MDXHelperApp
         private readonly ILoader scriptLoader;
         private readonly IExtractor extractor;
         private readonly IDBCommunicator dbc;
+        private BaseConfig Config { get; set; }
 
         public Processor()
         {
@@ -23,12 +24,15 @@ namespace MDXHelperApp
             dbc = scope.Resolve<IDBCommunicator>();
         }
 
-        public void LoadCubeObjects(ProcessorInput procInpt)
+        public void SetConfig(ProcessorInput procInpt)
         {
-            BaseConfig config = new BaseConfig(procInpt.SourceType, procInpt.ConfigParams);
-            LoaderOutput lo = scriptLoader.GetLoaderOutput(config);
-
+            Config = new BaseConfig(procInpt.SourceType, procInpt.ConfigParams);
             dbc.SetProjectAndCube(procInpt.ProjectName, procInpt.CubeName);
+        }
+
+        public void LoadCubeObjects()
+        {         
+            LoaderOutput lo = scriptLoader.GetLoaderOutput(Config);
 
             dbc.AddScript(lo.CalculationScript);
             dbc.AddObjActionToDB(lo.ActionList);
@@ -36,7 +40,7 @@ namespace MDXHelperApp
             dbc.AddObjMeasureToDB(lo.MeasureList);
         }
 
-        public void SplitScript(ProcessorInput procInpt)
+        public void SplitScript()
         {
             ObjCalcScript cs = dbc.GetScript();
             //  split

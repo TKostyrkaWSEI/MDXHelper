@@ -18,7 +18,6 @@ namespace MDXHelperApp
             var builder = new ContainerBuilder();
 
             builder.RegisterType<AppDbContext>().InstancePerLifetimeScope();
-            //builder.RegisterType<Processor>().AsImplementedInterfaces().InstancePerLifetimeScope();
             builder.RegisterType<Loader>().AsImplementedInterfaces().InstancePerLifetimeScope();
             builder.RegisterType<DBCommunicator>().AsImplementedInterfaces().InstancePerLifetimeScope();
             builder.RegisterType<Divider>().AsImplementedInterfaces().InstancePerLifetimeScope();

@@ -4,15 +4,6 @@ using System.IO;
 
 namespace MDXHelperApp
 {
-
-    //  todo:    ------------------------------------------
-    //
-    //  - posprzątać Namespace'y (jest HelperApp w Lib)
-    //  - wywalić Calculate z other calcs
-    //  - pomyśleć nad zrzutem do dokumentacji
-    //  -   SCOPE_ISOLATION
-    //  ---------------------------------------------------
-
     class Program
     {
         static void Main(string[] args)
@@ -22,7 +13,8 @@ namespace MDXHelperApp
 
         static void Ladowanie()
         {
-            string path_tie = @"C:\Users\tomek\Desktop\DCDemoMDX\Config_ServerAWDW1.txt";
+            //string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerA.txt";
+            string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerB.txt";
 
             string nl = new string('-', 50);
             Console.WriteLine(nl);
@@ -33,8 +25,9 @@ namespace MDXHelperApp
             ProcessorInput procInput = JsonConvert.DeserializeObject<ProcessorInput>(json);
             Processor prs = new Processor();
 
-            prs.LoadCubeObjects(procInput);
-            prs.SplitScript(procInput);
+            prs.SetConfig(procInput);
+            prs.LoadCubeObjects();
+            prs.SplitScript();
 
             Console.WriteLine(nl);
             Console.WriteLine("<-- end -->");
