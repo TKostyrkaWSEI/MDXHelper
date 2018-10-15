@@ -28,9 +28,10 @@ namespace MDXHelperApp
 
             //  Populate LoaderOutput
             //  ------------------------------------------------------------------------
-            LoaderOutput lo = new LoaderOutput();
-
-            lo.CalculationScript = cm.Text;
+            LoaderOutput lo = new LoaderOutput
+            {
+                CalculationScript = cm.Text
+            };
 
             foreach (MeasureGroup mg in cb.MeasureGroups)
             {
