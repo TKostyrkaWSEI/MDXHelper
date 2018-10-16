@@ -12,8 +12,11 @@ namespace DCDemo2App
             //dc.DemoMethod01();
             //dc.DemoMethod02();
             //dc.DemoMethod03();
-            dc.DemoMethod04();
+            //dc.DemoMethod04();
+            //dc.DemoMethod05();
+            dc.DemoMethod06();
 
+            Console.WriteLine("koniec --------------------");
             Console.ReadKey();
         }
 

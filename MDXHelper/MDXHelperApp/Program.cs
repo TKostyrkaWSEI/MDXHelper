@@ -14,7 +14,8 @@ namespace MDXHelperApp
         static void Ladowanie()
         {
             //string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerA.txt";
-            string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerB.txt";
+            //string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerB.txt";
+            string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerAWDW.txt";
 
             string nl = new string('-', 50);
             Console.WriteLine(nl);

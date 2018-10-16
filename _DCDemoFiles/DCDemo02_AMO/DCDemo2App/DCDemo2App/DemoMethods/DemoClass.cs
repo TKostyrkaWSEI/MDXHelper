@@ -83,7 +83,28 @@ namespace DCDemo2App.DemoMethods
                 Console.WriteLine($"\t{a.Name}");
             }
         }
+        public void DemoMethod05()
+        {
+            Database d = srv.Databases.FindByName("AWDW");
+            Cube c = d.Cubes.FindByName("Adventure Works");
+            MdxScript mx = c.MdxScripts[0];
 
+            foreach (CalculationProperty cp in mx.CalculationProperties)
+            {
+                Console.WriteLine($"name: {cp.CalculationReference}, folder: {cp.DisplayFolder}, nonempty: {cp.NonEmptyBehavior}, visible: {cp.Visible}");
+            }
+        }
+        public void DemoMethod06()
+        {
+            Database d = srv.Databases.FindByName("ContosoDCDemo");
+            Cube c = d.Cubes.FindByName("OperationB");
+            MdxScript mx = c.MdxScripts[0];
+
+            foreach (CalculationProperty cp in mx.CalculationProperties)
+            {
+                Console.WriteLine($"name: {cp.CalculationReference}, folder: {cp.DisplayFolder}, nonempty: {cp.NonEmptyBehavior}, visible: {cp.Visible}");
+            }
+        }
         void PrintLine(string s, int i = 0)
         {
             Console.WriteLine($"{new String(' ', 5 * i)}{s}");

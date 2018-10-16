@@ -86,3 +86,18 @@ GO
 									AND mb.[MEMBER_UNIQUE_NAME] = mr.[MEASURE_UNIQUE_NAME]
 	WHERE 1=1
 	AND mb.[CUBE_NAME] NOT LIKE '$%'
+	ORDER BY 
+			[CubeName]		
+		,	[ObjectName]	
+		
+
+-----------------------------------------------------------------------
+
+	SELECT * 
+	FROM #MEMBERS	AS mb	
+	WHERE [MEMBER_UNIQUE_NAME]	LIKE '%test%'
+
+	SELECT * 
+	FROM #MEASURES	AS mr	
+	WHERE [MEASURE_UNIQUE_NAME] LIKE '%test%'
+							

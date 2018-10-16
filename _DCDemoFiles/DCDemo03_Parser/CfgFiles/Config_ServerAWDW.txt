@@ -1,0 +1,10 @@
+{
+	"SourceType": "Server",
+	"ProjectName": "AWorksDW",
+	"CubeName": "Adventure Works",
+	"ConfigParams": {
+                    	"SsasCS": "WL352168\\KOKOSZMD",
+						"SsasDB": "AWDW",
+						"SsasCB": "Adventure Works"
+                    }
+}
