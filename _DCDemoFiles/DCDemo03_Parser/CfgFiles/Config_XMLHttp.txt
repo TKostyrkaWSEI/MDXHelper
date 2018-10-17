@@ -1,7 +1,7 @@
 {
 	"SourceType": "XML",
 	"ProjectName": "ContosoFromXMLWeb",
-	"CubeName": "OperationA",
+	"CubeName": "OperationB",
 	"ConfigParams": {
                     	"Path": "https://raw.githubusercontent.com/TKostyrkaWSEI/MDXHelper/master/_DCDemoFiles/DCDemo03_Parser/SampleXML/OperationB.cube"
                     }

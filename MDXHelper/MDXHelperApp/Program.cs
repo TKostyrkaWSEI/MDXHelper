@@ -8,15 +8,20 @@ namespace MDXHelperApp
     {
         static void Main(string[] args)
         {
-            Ladowanie();
+            string path_folder = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\";
+
+            //Ladowanie(path_folder + @"Config_ServerA.txt");
+            Ladowanie(path_folder + @"Config_ServerB.txt"    );
+            Ladowanie(path_folder + @"Config_ServerAWDW.txt" );
+            Ladowanie(path_folder + @"Config_XMLFile.txt"    );
+            Ladowanie(path_folder + @"Config_XMLHttp.txt"    );
+
+            Console.WriteLine("<-- end -->");
+            Console.ReadLine();
         }
 
-        static void Ladowanie()
+        static void Ladowanie(string path_tie)
         {
-            //string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerA.txt";
-            //string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerB.txt";
-            string path_tie = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\Config_ServerAWDW.txt";
-
             string nl = new string('-', 50);
             Console.WriteLine(nl);
 
@@ -31,8 +36,6 @@ namespace MDXHelperApp
             prs.SplitScript();
 
             Console.WriteLine(nl);
-            Console.WriteLine("<-- end -->");
-            Console.ReadLine();
         }
 
     }
