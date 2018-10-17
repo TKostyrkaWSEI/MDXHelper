@@ -6,26 +6,6 @@ using System.Threading.Tasks;
 
 namespace MDXHelperApp
 {
-    public interface IDivider
-    {
-        List<string> Divide(    string str,
-                                List<BreakSignPair> breakPairs,
-                                char divideSign
-                                );
-
-        List<string> Divide(string str,
-                                List<BreakSignPair> breakPairs,
-                                char divideSign,
-                                List<BreakSignPair> bracketPairs
-                                );
-    }
-
-    class BracketPair
-    {
-        public BreakSignPair bracketPair { get; set; }
-        public uint bracketCount { get; set; }
-    }
-
     class Divider: IDivider
     {
         public List<string> Divide( string str,

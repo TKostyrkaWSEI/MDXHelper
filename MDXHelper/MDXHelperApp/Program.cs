@@ -24,7 +24,7 @@ namespace MDXHelperApp
             Console.WriteLine(json);
 
             ProcessorInput procInput = JsonConvert.DeserializeObject<ProcessorInput>(json);
-            Processor prs = new Processor();
+            IProcessor prs = new Processor();
 
             prs.SetConfig(procInput);
             prs.LoadCubeObjects();

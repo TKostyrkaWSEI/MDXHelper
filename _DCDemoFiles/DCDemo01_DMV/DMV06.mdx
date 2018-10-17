@@ -1,0 +1,26 @@
+	--	Returns the names, restrictions, description, 
+	--	and other information for all Discover requests.
+	
+	SELECT *
+	FROM $SYSTEM.DISCOVER_SCHEMA_ROWSETS
+	;
+	
+	--	Describes the catalogs that are accessible on the server.
+
+	SELECT *
+	FROM $SYSTEM.DBSCHEMA_CATALOGS
+	;
+
+	--	Provides resource usage and activity information 
+	--	about the currently opened sessions on the server.
+
+	SELECT *
+	FROM $SYSTEM.DISCOVER_SESSIONS
+	;
+
+	--	Provides resource usage and activity information about the currently executing or 
+	--	last executed commands in the opened connections on the server.
+
+	SELECT *
+	FROM $SYSTEM.DISCOVER_COMMANDS
+	;

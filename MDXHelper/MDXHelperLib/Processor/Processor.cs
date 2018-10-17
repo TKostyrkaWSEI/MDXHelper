@@ -7,7 +7,7 @@ using MDXHelperData.Data;
 
 namespace MDXHelperApp
 {
-    public class Processor
+    public class Processor: IProcessor
     {
         private readonly ILoader scriptLoader;
         private readonly IExtractor extractor;

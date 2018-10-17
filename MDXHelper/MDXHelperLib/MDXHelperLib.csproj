@@ -74,6 +74,8 @@
     <Compile Include="Extractor\Other\BreakSignPair.cs" />
     <Compile Include="Extractor\Other\BreakState.cs" />
     <Compile Include="Extractor\Other\Calculation.cs" />
+    <Compile Include="Extractor\Other\BracketPair.cs" />
+    <Compile Include="Extractor\Other\IDivider.cs" />
     <Compile Include="Extractor\Other\Divider.cs" />
     <Compile Include="IoC\IocConfig.cs" />
     <Compile Include="Loader\Config\ServerConfig.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Loader\Picker\IPicker.cs" />
     <Compile Include="Loader\Picker\XMLPicker.cs" />
     <Compile Include="Loader\Picker\ServerPicker.cs" />
+    <Compile Include="Processor\IProcessor.cs" />
     <Compile Include="Processor\Processor.cs" />
     <Compile Include="Processor\ProcessorInput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
