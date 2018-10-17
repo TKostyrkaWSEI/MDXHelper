@@ -1,0 +1,8 @@
+{
+	"SourceType": "XML",
+	"ProjectName": "ContosoFromXMLFile",
+	"CubeName": "OperationA",
+	"ConfigParams": {
+						"Path": "C:\\Users\\kostytom\\Documents\\GitHub\\MDXHelper\\_DCDemoFiles\\DCDemo03_Parser\\SampleXML\\OperationA.cube"
+					}
+}

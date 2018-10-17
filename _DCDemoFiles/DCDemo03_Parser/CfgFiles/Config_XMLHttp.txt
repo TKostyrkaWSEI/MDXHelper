@@ -1,0 +1,8 @@
+{
+	"SourceType": "XML",
+	"ProjectName": "Suominen",
+	"CubeName": "ProductionSUO",
+	"ConfigParams": {
+                    	"Path": "https://raw.githubusercontent.com/TomekKostyrka/MDXHelper/master/SampleXML/ProductionSUO.cube"
+                    }
+}
