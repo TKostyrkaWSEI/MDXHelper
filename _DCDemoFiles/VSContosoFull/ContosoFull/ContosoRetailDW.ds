@@ -3,7 +3,7 @@
   <Name>ContosoRetailDW</Name>
   <CreatedTimestamp>2009-12-28T06:12:16Z</CreatedTimestamp>
   <LastSchemaUpdate>2010-01-21T10:38:36Z</LastSchemaUpdate>
-  <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=ContosoRetailDW</ConnectionString>
+  <ConnectionString>Provider=SQLNCLI11.1;Data Source=itk\dev17;Integrated Security=SSPI;Initial Catalog=ContosoRetailDW</ConnectionString>
   <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
   <ImpersonationInfo>
     <ImpersonationMode>Default</ImpersonationMode>

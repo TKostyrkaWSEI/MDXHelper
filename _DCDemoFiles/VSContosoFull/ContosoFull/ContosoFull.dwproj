@@ -94,8 +94,8 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>ContosoRetailDW.dsv</Name>
-      <FullPath>ContosoRetailDW.dsv</FullPath>
+      <Name>ContosoRetailDSV.dsv</Name>
+      <FullPath>ContosoRetailDSV.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -106,7 +106,7 @@
           <ConfigurationSetting>
             <Id>OPBI</Id>
             <Name>OPBI</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=ContosoRetailDW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=itk\dev17;Integrated Security=SSPI;Initial Catalog=ContosoRetailDW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
