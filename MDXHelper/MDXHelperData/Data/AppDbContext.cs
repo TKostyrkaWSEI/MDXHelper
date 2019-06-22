@@ -12,7 +12,7 @@ namespace MDXHelperData.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext() : base(@"Data Source =.; Initial Catalog = MDXHelperDb; Integrated Security = true")
+        public AppDbContext() : base(@"Data Source =ITK\DEV17; Initial Catalog = MDXHelperDb; Integrated Security = true")
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<AppDbContext>());        
         }

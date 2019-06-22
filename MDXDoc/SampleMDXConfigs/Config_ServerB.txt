@@ -1,10 +1,10 @@
 {
 	"SourceType": "Server",
 	"ProjectName": "ContosoDCDemo",
-	"CubeName": "OperationA",
+	"CubeName": "OperationB",
 	"ConfigParams": {
                     	"SsasCS": "WL352168\\KOKOSZMD",
 						"SsasDB": "ContosoDCDemo",
-						"SsasCB": "OperationA"
+						"SsasCB": "OperationB"
                     }
 }

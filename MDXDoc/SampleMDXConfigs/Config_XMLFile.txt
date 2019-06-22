@@ -1,8 +1,8 @@
 {
 	"SourceType": "XML",
-	"ProjectName": "Suominen",
-	"CubeName": "ProductionSUO",
+	"ProjectName": "ContosoFromXMLFile",
+	"CubeName": "OperationA",
 	"ConfigParams": {
-						"Path": "C:\\Users\\kostytom\\Source\\Repos\\RA\\TIPSRA Suominen\\TIPSRA_OLAP\\ProductionSUO.cube"
+						"Path": "C:\\Users\\kostytom\\Documents\\GitHub\\MDXHelper\\_DCDemoFiles\\DCDemo03_Parser\\SampleXML\\OperationA.cube"
 					}
 }

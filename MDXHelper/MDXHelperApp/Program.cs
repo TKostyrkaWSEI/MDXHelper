@@ -8,13 +8,13 @@ namespace MDXHelperApp
     {
         static void Main(string[] args)
         {
-            string path_folder = @"C:\Users\kostytom\Documents\GitHub\MDXHelper\_DCDemoFiles\DCDemo03_Parser\CfgFiles\";
-
+            string path_folder = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\MDXDoc\SampleMDXConfigs\"));
+  
             //Ladowanie(path_folder + @"Config_ServerA.txt");
-            Ladowanie(path_folder + @"Config_ServerB.txt"    );
+            //Ladowanie(path_folder + @"Config_ServerB.txt"    );
             Ladowanie(path_folder + @"Config_ServerAWDW.txt" );
-            Ladowanie(path_folder + @"Config_XMLFile.txt"    );
-            Ladowanie(path_folder + @"Config_XMLHttp.txt"    );
+            //Ladowanie(path_folder + @"Config_XMLFile.txt"    );
+            //Ladowanie(path_folder + @"Config_XMLHttp.txt"    );
 
             Console.WriteLine("<-- end -->");
             Console.ReadLine();

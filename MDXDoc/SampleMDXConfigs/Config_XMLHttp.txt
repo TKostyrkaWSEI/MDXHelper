@@ -1,8 +1,8 @@
 {
 	"SourceType": "XML",
-	"ProjectName": "Suominen",
-	"CubeName": "ProductionSUO",
+	"ProjectName": "ContosoFromXMLWeb",
+	"CubeName": "OperationB",
 	"ConfigParams": {
-                    	"Path": "https://raw.githubusercontent.com/TomekKostyrka/MDXHelper/master/SampleXML/ProductionSUO.cube"
+                    	"Path": "https://raw.githubusercontent.com/TKostyrkaWSEI/MDXHelper/master/_DCDemoFiles/DCDemo03_Parser/SampleXML/OperationB.cube"
                     }
 }
